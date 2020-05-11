@@ -517,7 +517,7 @@ def pdist(traj_list, metric="sspd", type_d="euclidean", converted=None, precisio
             raise ValueError("Euclidean implementation for distance " +
                              metric + " is not disponible if your data is not already converted in cell format")
 
-    print(("Computing " + type_d + " distance " + metric + " for %d trajectories" % nb_traj))
+    #print(("Computing " + type_d + " distance " + metric + " for %d trajectories" % nb_traj))
     M = np.zeros(sum(range(nb_traj)))
     dist = METRIC_DIC[type_d][metric]
     if metric.startswith("sowd_grid"):
